@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .links a:hover {
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👋 Welcome to Sophia's Portfolio</h1>
+        <p>Developer | Creator | Problem Solver</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hi! I'm Sophia, a passionate developer and creator. I love building amazing things and solving complex problems. This is my digital home where I showcase my projects and skills.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Open Source</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Featured Projects</h2>
+            <p>Check out my GitHub profile to see all my projects and contributions!</p>
+            <p style="margin-top: 1rem; color: #667eea; font-weight: bold;">
+                <a href="https://github.com/sopheroms1-tech" target="_blank" style="color: #667eea; text-decoration: underline;">View My GitHub Profile →</a>
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in connecting with other developers and creators!</p>
+            <div class="links">
+                <a href="https://github.com/sopheroms1-tech" target="_blank">GitHub</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Sophia. Built with ❤️ on GitHub Pages.</p>
+    </footer>
+</body>
+</html>
