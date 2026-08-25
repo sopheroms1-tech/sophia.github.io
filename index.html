@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia - Portfolio</title>
+    <title>Sophia - Soccer Passion</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             min-height: 100vh;
         }
         
@@ -25,6 +25,7 @@
             padding: 2rem 0;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border-bottom: 4px solid #FFC600;
         }
         
         header h1 {
@@ -34,7 +35,7 @@
         
         header p {
             font-size: 1.2rem;
-            color: #667eea;
+            color: #FFC600;
         }
         
         .container {
@@ -50,6 +51,7 @@
             margin-bottom: 2rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
+            border-left: 5px solid #FFC600;
         }
         
         .card:hover {
@@ -57,7 +59,7 @@
         }
         
         .card h2 {
-            color: #667eea;
+            color: #1e3c72;
             margin-bottom: 1rem;
             font-size: 1.8rem;
         }
@@ -67,19 +69,54 @@
             line-height: 1.8;
         }
         
-        .skills {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .stat-box {
+            background: #1e3c72;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-box h3 {
+            font-size: 2rem;
+            color: #FFC600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-box p {
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+        
+        .achievements {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 1rem;
         }
         
-        .skill-tag {
-            background: #667eea;
-            color: white;
-            padding: 0.5rem 1rem;
+        .achievement-tag {
+            background: #FFC600;
+            color: #1e3c72;
+            padding: 0.75rem 1.25rem;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border-left: 4px solid #FFC600;
         }
         
         .links {
@@ -94,10 +131,16 @@
             text-decoration: none;
             font-size: 1.1rem;
             transition: color 0.3s ease;
+            background: #FFC600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            color: #1e3c72;
+            font-weight: bold;
         }
         
         .links a:hover {
-            color: #667eea;
+            background: #FFD700;
+            transform: scale(1.05);
         }
         
         footer {
@@ -105,54 +148,105 @@
             color: white;
             padding: 2rem;
             margin-top: 3rem;
+            border-top: 2px solid #FFC600;
+        }
+        
+        .emoji {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>👋 Welcome to Sophia's Portfolio</h1>
-        <p>Developer | Creator | Problem Solver</p>
+        <h1>⚽ SOPHIA'S SOCCER WORLD ⚽</h1>
+        <p>Passion. Dedication. The Beautiful Game.</p>
     </header>
     
     <div class="container">
         <div class="card">
-            <h2>About Me</h2>
-            <p>Hi! I'm Sophia, a passionate developer and creator. I love building amazing things and solving complex problems. This is my digital home where I showcase my projects and skills.</p>
+            <h2><span class="emoji">🌟</span>About My Soccer Journey</h2>
+            <p>Welcome to my soccer passion zone! I'm Sophia, a dedicated soccer player and enthusiast who lives and breathes the beautiful game. Whether it's playing on the field, watching the pros, or sharing my love for soccer with others, this is where my passion comes alive.</p>
+            <p>Soccer isn't just a sport for me—it's a way of life. It's taught me teamwork, perseverance, discipline, and the true meaning of competition.</p>
         </div>
         
         <div class="card">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">Web Development</span>
-                <span class="skill-tag">GitHub</span>
-                <span class="skill-tag">HTML & CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Problem Solving</span>
-                <span class="skill-tag">Open Source</span>
+            <h2><span class="emoji">📊</span>My Soccer Stats</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>50+</h3>
+                    <p>Goals Scored</p>
+                </div>
+                <div class="stat-box">
+                    <h3>8</h3>
+                    <p>Seasons Played</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Matches</p>
+                </div>
+                <div class="stat-box">
+                    <h3>35+</h3>
+                    <p>Assists</p>
+                </div>
             </div>
         </div>
         
         <div class="card">
-            <h2>Featured Projects</h2>
-            <p>Check out my GitHub profile to see all my projects and contributions!</p>
-            <p style="margin-top: 1rem; color: #667eea; font-weight: bold;">
-                <a href="https://github.com/sopheroms1-tech" target="_blank" style="color: #667eea; text-decoration: underline;">View My GitHub Profile →</a>
-            </p>
+            <h2><span class="emoji">🏆</span>Achievements & Highlights</h2>
+            <div class="achievements">
+                <span class="achievement-tag">⭐ Team Captain</span>
+                <span class="achievement-tag">🥇 League Champions</span>
+                <span class="achievement-tag">🎖️ All-Star Selection</span>
+                <span class="achievement-tag">⚽ MVP Award</span>
+                <span class="achievement-tag">🌟 Top Scorer</span>
+                <span class="achievement-tag">🤝 Community Leader</span>
+            </div>
+            <div class="highlight">
+                <p><strong>Favorite Memory:</strong> Leading my team to the championship final with an incredible overtime goal. The feeling of pure joy and vindication for all the hard work and dedication was unforgettable!</p>
+            </div>
         </div>
         
         <div class="card">
-            <h2>Get In Touch</h2>
-            <p>I'm always interested in connecting with other developers and creators!</p>
+            <h2><span class="emoji">💪</span>Playing Style & Positions</h2>
+            <p><strong>Primary Position:</strong> Forward | <strong>Secondary Position:</strong> Midfielder</p>
+            <p>I'm known for my speed, agility, and precise finishing. My playing style combines technical skill with strategic positioning. I love creating opportunities for teammates and converting chances into goals. On the field, I'm all about:</p>
+            <div class="achievements">
+                <span class="achievement-tag">Speed & Agility</span>
+                <span class="achievement-tag">Ball Control</span>
+                <span class="achievement-tag">Vision & Passing</span>
+                <span class="achievement-tag">Finishing</span>
+                <span class="achievement-tag">Leadership</span>
+                <span class="achievement-tag">Teamwork</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><span class="emoji">🎯</span>Soccer Goals & Dreams</h2>
+            <p>My passion for soccer drives me to constantly improve and achieve new heights:</p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; color: #555;">
+                <li>🥅 Score 100+ goals in my career</li>
+                <li>🏅 Win multiple championships</li>
+                <li>👥 Mentor young soccer players</li>
+                <li>🌍 Promote the beautiful game globally</li>
+                <li>💯 Maintain peak fitness and performance</li>
+                <li>🤝 Build a strong, supportive soccer community</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2><span class="emoji">📞</span>Connect With Me</h2>
+            <p>Follow my soccer journey, share your passion for the game, and let's grow this community together!</p>
             <div class="links">
                 <a href="https://github.com/sopheroms1-tech" target="_blank">GitHub</a>
-                <a href="mailto:your-email@example.com">Email</a>
+                <a href="mailto:sophia@example.com">Email Me</a>
                 <a href="https://twitter.com" target="_blank">Twitter</a>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2026 Sophia. Built with ❤️ on GitHub Pages.</p>
+        <p>&copy; 2026 Sophia - Soccer Enthusiast. Built with ❤️ and passion for the beautiful game. ⚽</p>
     </footer>
 </body>
 </html>
